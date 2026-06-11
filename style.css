@@ -51,7 +51,6 @@
       min-height: 100vh;
     }
 
-    /* NAV */
     nav {
       position: sticky; top: 0; z-index: 100;
       background: var(--bg);
@@ -109,7 +108,6 @@
     }
     .font-btn:hover { background: var(--green-dim); color: var(--green); border-color: var(--border2); }
 
-    /* HERO */
     .hero {
       min-height: 92vh;
       display: flex; flex-direction: column; align-items: center; justify-content: center;
@@ -190,7 +188,6 @@
     }
     .hero-stat-l { font-size: 0.8rem; color: var(--text3); margin-top: 4px; letter-spacing: 0.04em; }
 
-    /* SECTION commons */
     section { padding: 5rem 2rem; max-width: 1100px; margin: 0 auto; }
     .section-eyebrow {
       font-size: 0.7rem; letter-spacing: 0.15em; text-transform: uppercase;
@@ -207,7 +204,6 @@
       margin: 0;
     }
 
-    /* NEWS TICKER */
     .ticker-wrap {
       background: var(--surface);
       border-top: 0.5px solid var(--border);
@@ -225,7 +221,6 @@
     .ticker-dot { width: 6px; height: 6px; border-radius: 50%; background: var(--green); flex-shrink: 0; }
     @keyframes ticker { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
 
-    /* DATA CARDS */
     .cards-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -263,7 +258,6 @@
     .trend-warn { background: var(--amber-dim); color: var(--amber); }
     .trend-down { background: var(--red-dim); color: var(--red); }
 
-    /* AI IDENTIFIER */
     .ai-section { padding: 5rem 2rem; }
     .ai-inner { max-width: 1100px; margin: 0 auto; }
     .ai-layout {
