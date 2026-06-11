@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AgroForte — Futuro Sustentável</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<nav>
+  <div class="nav-logo">
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2"/>
+      <path d="M12 6v6l4 2"/>
+      <circle cx="12" cy="12" r="3" fill="currentColor" stroke="none"/>
+    </svg>
+    Agro e <span>Sustentabilidade</span>
+  </div>
+  <div class="nav-links">
+    <a href="#dados">Dados</a>
+    <a href="#ia">IA de Pragas</a>
+    <a href="#futuro">Futuro</a>
+    <a href="#tecnologia">Tecnologia</a>
+  </div>
+  <div class="nav-controls">
+    <div class="font-size-group">
+      <button class="font-btn" id="fontDown" title="Diminuir fonte" aria-label="Diminuir tamanho da fonte">A-</button>
+      <button class="font-btn" id="fontReset" title="Resetar fonte" aria-label="Tamanho padrão">A</button>
+      <button class="font-btn" id="fontUp" title="Aumentar fonte" aria-label="Aumentar tamanho da fonte">A+</button>
+    </div>
+    <button class="ctrl-btn" id="themeToggle" aria-label="Alternar tema">
+      <svg id="themeIcon" viewBox="0 0 24 24">
+        <circle cx="12" cy="12" r="4"/>
+        <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/>
+      </svg>
+      <span id="themeLabel">Claro</span>
+    </button>
+  </div>
+</nav>
+
+<div class="ticker-wrap" aria-label="Notícias do agronegócio">
+  <div class="ticker-inner" id="tickerInner">
+    <div class="ticker-item"><span class="ticker-dot"></span>Exportações do agronegócio crescem 8,4% no primeiro trimestre de 2025</div>
+    <div class="ticker-item"><span class="ticker-dot"></span>Brasil consolida posição como 2º maior exportador agrícola do mundo</div>
+    <div class="ticker-item"><span class="ticker-dot"></span>Soja supera R$ 156 bilhões em receita exportada em 2024</div>
+    <div class="ticker-item"><span class="ticker-dot"></span>Adoção de agricultura de precisão cresce 34% entre pequenos produtores</div>
+    <div class="ticker-item"><span class="ticker-dot"></span>Pastagens recuperadas somam mais de 6 milhões de hectares em 2024</div>
+    <div class="ticker-item"><span class="ticker-dot"></span>Pragas custam ao Brasil R$ 66 bilhões por ano — IA pode reduzir em 40%</div>
+    <div class="ticker-item"><span class="ticker-dot"></span>Exportações do agronegócio crescem 8,4% no primeiro trimestre de 2025</div>
+    <div class="ticker-item"><span class="ticker-dot"></span>Brasil consolida posição como 2º maior exportador agrícola do mundo</div>
+    <div class="ticker-item"><span class="ticker-dot"></span>Soja supera R$ 156 bilhões em receita exportada em 2024</div>
+    <div class="ticker-item"><span class="ticker-dot"></span>Adoção de agricultura de precisão cresce 34% entre pequenos produtores</div>
+    <div class="ticker-item"><span class="ticker-dot"></span>Pastagens recuperadas somam mais de 6 milhões de hectares em 2024</div>
+    <div class="ticker-item"><span class="ticker-dot"></span>Pragas custam ao Brasil R$ 66 bilhões por ano — IA pode reduzir em 40%</div>
+  </div>
+</div>
+
+<div class="hero">
+  <div class="hero-bg-grid" aria-hidden="true"></div>
+  <span class="hero-eyebrow">Agronegócio Brasileiro · 2026</span>
+  <h1 class="hero-title">
+    Semeando <br/><em>Sustentabilidade</em>
+  </h1>
+  <p class="hero-subtitle">
+    Dados em tempo real, tecnologia de ponta e inteligência artificial a serviço do produtor rural brasileiro.
+  </p>
+  <div class="hero-cta">
+    <a class="btn-primary" href="#ia">Identificar Pragas com IA</a>
+    <a class="btn-outline" href="#dados">Ver Dados do Setor</a>
+  </div>
+  <div class="hero-stats">
+    <div class="hero-stat">
+      <div class="hero-stat-n">R$3,3T</div>
+      <div class="hero-stat-l">PIB do agro (2026)</div>
+    </div>
+    <div class="hero-stat">
+      <div class="hero-stat-n">27,4%</div>
+      <div class="hero-stat-l">do PIB nacional</div>
+    </div>
+    <div class="hero-stat">
+      <div class="hero-stat-n">21M</div>
+      <div class="hero-stat-l">empregos gerados</div>
+    </div>
+    <div class="hero-stat">
+      <div class="hero-stat-n">158</div>
+      <div class="hero-stat-l">países abastecidos</div>
+    </div>
+  </div>
+</div>
+
+<hr class="divider"/>
+
+<section id="dados">
+  <span class="section-eyebrow">Panorama Atual</span>
+  <h2 class="section-title">Agronegócio em números</h2>
+  <p class="section-sub">Indicadores atualizados do setor que move a economia brasileira.</p>
+  <div class="cards-grid">
+    <div class="card">
+      <div class="card-icon">
+        <svg viewBox="0 0 24 24"><path d="M3 3h18v18H3zM7 16l3-3 2 2 5-5"/></svg>
+      </div>
+      <div class="card-n">156 bi</div>
+      <div class="card-label">Soja exportada</div>
+      <div class="card-desc">Receita total com exportações de soja em grão, farelo e óleo em 2026.</div>
+      <span class="card-trend trend-up">↑ 33% na comparação anual</span>
+    </div>
+    <div class="card">
+      <div class="card-icon">
+        <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+      </div>
+      <div class="card-n">35 mi</div>
+      <div class="card-label">Toneladas de milho</div>
+      <div class="card-desc">Segunda safra de milho prevista para 2026/27, 2ª maior da história.</div>
+      <span class="card-trend trend-up">↑ 4,1% projeção</span>
+    </div>
+    <div class="card">
+      <div class="card-icon">
+        <svg viewBox="0 0 24 24"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+      </div>
+      <div class="card-n">182 bi</div>
+      <div class="card-label">Total exportado</div>
+      <div class="card-desc">Balança comercial do agronegócio, superávit recorde em 2026.</div>
+      <span class="card-trend trend-up">↑ 8,4% acum.</span>
+    </div>
+    <div class="card">
+      <div class="card-icon">
+        <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 1 0 0 20A10 10 0 0 0 12 2z"/><path d="M8 12h8M12 8v8"/></svg>
+      </div>
+      <div class="card-n">66 bi</div>
+      <div class="card-label">Perdas por pragas/ano</div>
+      <div class="card-desc">Estimativa de perdas causadas por pragas, doenças e plantas daninhas.</div>
+      <span class="card-trend trend-warn">Alerta crítico</span>
+    </div>
+    <div class="card">
+      <div class="card-icon">
+        <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 9h6M9 12h6M9 15h4"/></svg>
+      </div>
+      <div class="card-n">340 mi</div>
+      <div class="card-label">Hectares agricultáveis</div>
+      <div class="card-desc">Área total com potencial agrícola no Brasil, maior do mundo.</div>
+      <span class="card-trend trend-up">Potencial +40%</span>
+    </div>
+    <div class="card">
+      <div class="card-icon">
+        <svg viewBox="0 0 24 24"><path d="M12 22V12M12 12C12 6 7 3 2 3M12 12c0-6 5-9 10-9"/></svg>
+      </div>
+      <div class="card-n">92%</div>
+      <div class="card-label">Energia renovável</div>
+      <div class="card-desc">Percentual de energia usada no agro brasileiro de origem renovável.</div>
+      <span class="card-trend trend-up">Referência global</span>
+    </div>
+  </div>
+</section>
+
+<hr class="divider"/>
+
+<div class="ai-section" id="ia">
+  <div class="ai-inner">
+    <span class="section-eyebrow">Inteligência Artificial</span>
+    <h2 class="section-title">Identificador de pragas</h2>
+    <p class="section-sub">Envie uma foto da sua lavoura. A IA analisa a imagem e identifica a praga, severidade e recomendações de controle.</p>
+    <div class="ai-layout">
+      <div>
+        <div class="ai-upload-area" id="uploadArea">
+          <input type="file" class="ai-file-input" id="fileInput" accept="image/*" />
+          <div id="uploadContent">
+            <div class="ai-upload-icon">
+              <svg viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
+            </div>
+            <div class="ai-upload-title">Arraste ou clique para enviar</div>
+            <div class="ai-upload-sub">Suporte para JPG, PNG, WEBP · Máx 10MB</div>
+            <button class="btn-primary" onclick="document.getElementById('fileInput').click()" type="button">Escolher imagem</button>
+          </div>
+          <img id="previewImg" class="ai-preview" style="display:none;" alt="Pré-visualização da imagem enviada" />
+        </div>
+        <div style="margin-top:12px;">
+          <button class="ai-analyze-btn" id="analyzeBtn" disabled>Analisar com IA</button>
+        </div>
+        <div style="margin-top:16px; padding: 1rem; background: var(--surface); border-radius: var(--radius); border: 0.5px solid var(--border);">
+          <div style="font-size:0.75rem; color: var(--text3); margin-bottom:8px; letter-spacing:0.06em; text-transform:uppercase;">Testar com exemplos</div>
+          <div style="display:flex; flex-wrap:wrap; gap:8px;" id="sampleBtns">
+            <button class="ctrl-btn" data-sample="lagarta" type="button">Lagarta-do-cartucho</button>
+            <button class="ctrl-btn" data-sample="ferrugem" type="button">Ferrugem asiática</button>
+            <button class="ctrl-btn" data-sample="mosca" type="button">Mosca-branca</button>
+            <button class="ctrl-btn" data-sample="cigarrinha" type="button">Cigarrinha</button>
+          </div>
+        </div>
+      </div>
+      <!-- Result -->
+      <div class="ai-result-panel" id="resultPanel">
+        <div class="ai-result-header">
+          <div class="ai-status-dot" id="statusDot"></div>
+          <span id="statusText">Aguardando análise</span>
+        </div>
+        <div class="ai-loading" id="loadingEl">
+          <div class="spinner"></div>
+          <span id="loadingText">Processando imagem…</span>
+        </div>
+        <div class="ai-placeholder" id="placeholderEl">
+          <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+          <p style="font-size:0.875rem;">Envie uma imagem da lavoura ou selecione um exemplo para análise.</p>
+        </div>
+        <div class="ai-result-content" id="resultContent" style="display:none;"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<hr class="divider"/>
+
+
+<section id="futuro">
+  <span class="section-eyebrow">Futuro Sustentável</span>
+  <h2 class="section-title">O campo que queremos em 2035</h2>
+  <p class="section-sub">Metas e marcos do agronegócio brasileiro rumo à produção sustentável.</p>
+  <div style="display:grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items:start;">
+    <div class="timeline">
+      <div class="tl-item">
+        <div class="tl-dot"></div>
+        <div class="tl-year">2024 — Atual</div>
+        <div class="tl-title">Agricultura de precisão em escala</div>
+        <div class="tl-desc">34% dos produtores já utilizam sensores IoT e drones para monitoramento de culturas, com crescimento acelerado.</div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-dot"></div>
+        <div class="tl-year">2026</div>
+        <div class="tl-title">IA integrada em toda a cadeia</div>
+        <div class="tl-desc">Detecção preditiva de pragas com 95% de acurácia; redução de 30% no uso de defensivos agrícolas.</div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-dot"></div>
+        <div class="tl-year">2028</div>
+        <div class="tl-title">Neutralidade de carbono</div>
+        <div class="tl-desc">Implementação massiva de créditos de carbono agrícola; mais de 8 milhões de hectares com pastagens recuperadas.</div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-dot"></div>
+        <div class="tl-year">2030</div>
+        <div class="tl-title">Desmatamento zero ilegal</div>
+        <div class="tl-desc">Meta do Plano ABC+ — produzir mais em área já convertida com rastreabilidade digital completa.</div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-dot"></div>
+        <div class="tl-year">2035</div>
+        <div class="tl-title">Liderança sustentável global</div>
+        <div class="tl-desc">Brasil como referência em bioeconomia e exportação de alimentos com menor pegada de carbono do mundo.</div>
+      </div>
+    </div>
+    </div>
+  </div>
+</section>
+
+<hr class="divider"/>
+
+<section id="tecnologia">
+  <span class="section-eyebrow">Tecnologia no Campo</span>
+  <h2 class="section-title">Ferramentas que transformam</h2>
+  <p class="section-sub">Inovações que estão revolucionando a produção agrícola brasileira.</p>
+  <div class="features-grid">
+    <div class="feature-card">
+      <div class="feature-head">
+        <div class="feature-icon fi-green">
+          <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20z"/><path d="M12 8v4l3 3"/></svg>
+        </div>
+        <div>
+          <div class="feature-title">Drones de monitoramento</div>
+          <span class="feature-badge fb-green">Em expansão</span>
+        </div>
+      </div>
+      <div class="feature-body">Voos autônomos com câmeras multiespectrais mapeiam até 500 ha/dia, detectando estresses hídricos, pragas e doenças antes da manifestação visual.</div>
+    </div>
+    <div class="feature-card">
+      <div class="feature-head">
+        <div class="feature-icon fi-green">
+          <svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+        </div>
+        <div>
+          <div class="feature-title">Sensores IoT no solo</div>
+          <span class="feature-badge fb-green">Consolidado</span>
+        </div>
+      </div>
+      <div class="feature-body">Rede de sensores mede umidade, temperatura, pH e nutrientes em tempo real, enviando alertas e recomendações diretamente ao produtor.</div>
+    </div>
+    <div class="feature-card">
+      <div class="feature-head">
+        <div class="feature-icon fi-amber">
+          <svg viewBox="0 0 24 24"><path d="M9.663 17h4.673M12 3v1M3 12h1M20 12h1M5.636 5.636l.707.707M18.364 5.636l-.707.707"/><path d="M12 7a5 5 0 1 0 0 10 5 5 0 0 0 0-10z"/></svg>
+        </div>
+        <div>
+          <div class="feature-title">Modelos climáticos locais</div>
+          <span class="feature-badge fb-green">IA preditiva</span>
+        </div>
+      </div>
+      <div class="feature-body">Previsões de curto e médio prazo calibradas para microzones agrícolas, com alertas para geada, seca, chuva excessiva e janelas ideais de plantio.</div>
+    </div>
+    <div class="feature-card">
+      <div class="feature-head">
+        <div class="feature-icon fi-green">
+          <svg viewBox="0 0 24 24"><path d="M12 20h9M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+        </div>
+        <div>
+          <div class="feature-title">Rastreabilidade blockchain</div>
+          <span class="feature-badge fb-green">Em adoção</span>
+        </div>
+      </div>
+      <div class="feature-body">Registro imutável de toda a cadeia produtiva — da semente à prateleira — garantindo origem, sustentabilidade e conformidade com mercados premium.</div>
+    </div>
+    <div class="feature-card">
+      <div class="feature-head">
+        <div class="feature-icon fi-green">
+          <svg viewBox="0 0 24 24"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>
+        </div>
+        <div>
+          <div class="feature-title">Aplicação variável de insumos</div>
+          <span class="feature-badge fb-green">Precisão total</span>
+        </div>
+      </div>
+      <div class="feature-body">Máquinas com receita digital aplicam a quantidade exata de fertilizante e defensivo em cada ponto do campo, reduzindo custo e impacto ambiental.</div>
+    </div>
+    <div class="feature-card">
+      <div class="feature-head">
+        <div class="feature-icon fi-amber">
+          <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/></svg>
+        </div>
+        <div>
+          <div class="feature-title">Energia solar no campo</div>
+          <span class="feature-badge fb-green">Crescimento 48%</span>
+        </div>
+      </div>
+      <div class="feature-body">Mini e microgerações fotovoltaicas em propriedades rurais alimentam irrigação, resfriamento e eletrificação com custo zero após amortização.</div>
+    </div>
+  </div>
+</section>
+
+
+<footer>
+  <div class="footer-logo">Agrinho</div>
+  <div class="footer-links">
+    <a href="#dados">Dados do Setor</a>
+    <a href="#ia">IA de Pragas</a>
+    <a href="#futuro">Futuro Sustentável</a>
+    <a href="#tecnologia">Tecnologia</a>
+  </div>
+  <div class="footer-copy">desenvolvido- Idio Junior</div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
