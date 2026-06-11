@@ -6,7 +6,7 @@
 
 ##  Objetivo do Projeto
 
-Demonstrar como a tecnologia pode ser aplicada tanto no campo quanto na interface de um site, compartilhar curiosides e números estatísticos.🌱
+Demonstrar como a tecnologia pode ser aplicada tanto no campo quanto na interface de um site, compartilhar curiosides e números estatísticos, com um assistente IA sobre pragas.🌱
 
 ---
 
@@ -15,6 +15,8 @@ Demonstrar como a tecnologia pode ser aplicada tanto no campo quanto na interfac
 ###  UI/UX & Design
 * **Design Responsivo:** Totalmente adaptável para dispositivos móveis e desktop via CSS
 * **Scroll Animations:** Efeito de revelação de elementos utilizando.
+* **Modo escuro e claro** Opção de adaptação de cores (claro) (escuro)
+* **Modidicação de fonte** Mudança de tamanho da fonte para maior e menor
 
 
 ---
