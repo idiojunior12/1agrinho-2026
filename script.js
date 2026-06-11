@@ -17,7 +17,6 @@ function setTheme(dark) {
 }
 themeBtn.addEventListener('click', () => setTheme(!isDark));
 
-/* ── FONT SIZE ─────────────────────────────────────── */
 const sizes = [12, 14, 16, 18, 20];
 let sizeIdx = 2;
 function applySize() {
@@ -58,7 +57,6 @@ function loadFile(f) {
   reader.readAsDataURL(f);
 }
 
-/* ── SAMPLE BUTTONS ────────────────────────────────── */
 document.querySelectorAll('[data-sample]').forEach(btn => {
   btn.addEventListener('click', () => {
     selectedSample = btn.getAttribute('data-sample');
@@ -75,7 +73,6 @@ document.querySelectorAll('[data-sample]').forEach(btn => {
   });
 });
 
-/* ── PEST DATABASE ────────────────────────────────── */
 const pests = {
   lagarta: {
     name: 'Lagarta-do-cartucho',
@@ -131,7 +128,6 @@ const pests = {
   },
 };
 
-/* ── ANALYZE ──────────────────────────────────────── */
 analyzeBtn.addEventListener('click', async () => {
   const statusDot = document.getElementById('statusDot');
   const statusText = document.getElementById('statusText');
